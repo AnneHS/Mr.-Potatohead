@@ -10,4 +10,15 @@
     <string name="mouth">Mouth</string>
     <string name="ears">Ears</string>
     <string name="shoes">Shoes</string>
+    <string name="body_image">body_img</string>
+    <string name="arms_image">arms_img</string>
+    <string name="ears_image">ears_img</string>
+    <string name="eyebrows_image">eyebrows_img</string>
+    <string name="eyes_image">eyes_img</string>
+    <string name="hat_image">hat_img</string>
+    <string name="mouth_image">mouth_img</string>
+    <string name="mustache_image">mustache_img</string>
+    <string name="nose_image">nose_img</string>
+    <string name="shoes_image">shoes_img</string>
+    <string name="glasses_image">glasses_img</string>
 </resources>
