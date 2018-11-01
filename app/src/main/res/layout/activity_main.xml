@@ -18,7 +18,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
-            android:id="@+id/imageView8"
+            android:id="@+id/body"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:contentDescription="@string/body_image"
@@ -26,7 +26,7 @@
             app:srcCompat="@drawable/body" />
 
         <ImageView
-            android:id="@+id/imageView9"
+            android:id="@+id/arms"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:contentDescription="@string/arms_image"
@@ -34,7 +34,7 @@
             app:srcCompat="@drawable/arms" />
 
         <ImageView
-            android:id="@+id/imageView10"
+            android:id="@+id/ears"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:contentDescription="@string/ears_image"
@@ -42,7 +42,7 @@
             app:srcCompat="@drawable/ears" />
 
         <ImageView
-            android:id="@+id/imageView11"
+            android:id="@+id/eyebrows"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:contentDescription="@string/eyebrows_image"
@@ -50,7 +50,7 @@
             app:srcCompat="@drawable/eyebrows" />
 
         <ImageView
-            android:id="@+id/imageView13"
+            android:id="@+id/eyes"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:contentDescription="@string/eyes_image"
@@ -58,7 +58,7 @@
             app:srcCompat="@drawable/eyes" />
 
         <ImageView
-            android:id="@+id/imageView14"
+            android:id="@+id/glasses"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:contentDescription="@string/glasses_image"
@@ -66,7 +66,7 @@
             app:srcCompat="@drawable/glasses" />
 
         <ImageView
-            android:id="@+id/imageView15"
+            android:id="@+id/hat"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:contentDescription="@string/hat_image"
@@ -74,7 +74,7 @@
             app:srcCompat="@drawable/hat" />
 
         <ImageView
-            android:id="@+id/imageView16"
+            android:id="@+id/mouth"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:contentDescription="@string/mouth_image"
@@ -82,7 +82,7 @@
             app:srcCompat="@drawable/mouth" />
 
         <ImageView
-            android:id="@+id/imageView17"
+            android:id="@+id/mustache"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:contentDescription="@string/mustache_image"
@@ -90,7 +90,7 @@
             app:srcCompat="@drawable/mustache" />
 
         <ImageView
-            android:id="@+id/imageView18"
+            android:id="@+id/nose"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:contentDescription="@string/nose_image"
@@ -98,7 +98,7 @@
             app:srcCompat="@drawable/nose" />
 
         <ImageView
-            android:id="@+id/imageView19"
+            android:id="@+id/shoes"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:contentDescription="@string/shoes_image"
