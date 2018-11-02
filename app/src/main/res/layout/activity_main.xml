@@ -22,7 +22,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:contentDescription="@string/body_image"
-            android:visibility="invisible"
+            android:visibility="visible"
             app:srcCompat="@drawable/body" />
 
         <ImageView
@@ -177,7 +177,7 @@
             android:layout_width="107dp"
             android:layout_height="wrap_content"
             android:onClick="checkClicked"
-            android:text="@string/glasses"
+            android:text="Glasses"
             app:layout_column="1"
             app:layout_row="1" />
 
