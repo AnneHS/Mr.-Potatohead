@@ -9,6 +9,8 @@ import android.widget.ImageView;
 public class MainActivity extends AppCompatActivity {
 
     /*
+    Ik kreeg het Memory Management niet werkende, daarom zijn die delen voor nu in comments gezet.
+
     // Set reference for images
     ImageView glasses = (ImageView) findViewById(R.id.glasses);
     ImageView hat = (ImageView) findViewById(R.id.hat);
@@ -66,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
     }
     */
 
-
+    // Set visibility for images based on the checked checkboxes
     public void checkClicked(View v) {
         // Log.d("potato", "checkClicked");
 
