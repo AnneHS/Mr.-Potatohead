@@ -9,7 +9,6 @@ import android.widget.CheckBox;
 import android.widget.ImageView;
 public class MainActivity extends AppCompatActivity {
 
-    // Set reference for images
     ImageView glasses, hat, eyebrows, nose, mustache, arms, eyes, mouth, ears, shoes;
 
     @Override
