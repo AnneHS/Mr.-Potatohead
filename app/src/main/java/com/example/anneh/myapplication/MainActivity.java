@@ -7,6 +7,9 @@ import android.util.Log;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.ImageView;
+
+import java.io.IOException;
+
 public class MainActivity extends AppCompatActivity {
 
     ImageView glasses, hat, eyebrows, nose, mustache, arms, eyes, mouth, ears, shoes;
@@ -17,23 +20,20 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         // Set reference for images
-        glasses = (ImageView) findViewById(R.id.glasses);
-        hat = (ImageView) findViewById(R.id.hat);
-        eyebrows = (ImageView) findViewById(R.id.eyebrows);
-        nose = (ImageView) findViewById(R.id.nose);
-        mustache = (ImageView) findViewById(R.id.mustache);
-        arms = (ImageView) findViewById(R.id.arms);
-        eyes = (ImageView) findViewById(R.id.eyes);
-        mouth = (ImageView) findViewById(R.id.mouth);
-        ears = (ImageView) findViewById(R.id.ears);
-        shoes = (ImageView) findViewById(R.id.shoes);
+        glasses = findViewById(R.id.glasses);
+        hat = findViewById(R.id.hat);
+        eyebrows = findViewById(R.id.eyebrows);
+        nose = findViewById(R.id.nose);
+        mustache = findViewById(R.id.mustache);
+        arms = findViewById(R.id.arms);
+        eyes = findViewById(R.id.eyes);
+        mouth = findViewById(R.id.mouth);
+        ears = findViewById(R.id.ears);
+        shoes =  findViewById(R.id.shoes);
 
-        System.out.println("Hier ben ik");
 
-        // If activity
+        // Restore visibility state when layout is reloaded
         if(savedInstanceState != null) {
-
-            // Restore visibility state
             glasses.setVisibility(savedInstanceState.getInt("Glasses"));
             hat.setVisibility(savedInstanceState.getInt("Hat"));
             eyebrows.setVisibility(savedInstanceState.getInt("Eyebrows"));
@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public void onSaveInstanceState(Bundle outState) {
-        super.onSaveInstanceState(outState); // always call super
+        super.onSaveInstanceState(outState);
 
         // Preserve visibility of images
         outState.putInt("Glasses", glasses.getVisibility());
@@ -67,98 +67,46 @@ public class MainActivity extends AppCompatActivity {
 
     // Set visibility for images based on the checked checkboxes
     public void checkClicked(View v) {
+
+        // Get checked checkbox
         CheckBox checkbox = (CheckBox) v;
-        String checkbox_string = checkbox.getText().toString(); // --> "Hat"
 
-        if (checkbox_string.equals("Glasses")){
+        // Get corresponding ImageView
+        ImageView view = null;
+        switch(checkbox.getText().toString()) {
+            case "Glasses":         view = glasses;
+                                    break;
+            case "Hat":             view = hat;
+                                    break;
+            case "Eyebrows":        view = eyebrows;
+                                    break;
+            case "Nose":            view = nose;
+                                    break;
+            case "Mustache":        view = mustache;
+                                    break;
+            case "Arms":            view = arms;
+                                    break;
+            case "Eyes":            view = eyes;
+                                    break;
+            case "Mouth":           view = mouth;
+                                    break;
+            case "Ears":            view = ears;
+                                    break;
+            case "Shoes":           view = shoes;
 
+        }
+
+        // Set visibility for view
+        try {
             if (checkbox.isChecked()) {
-                glasses.setVisibility(View.VISIBLE);
+                view.setVisibility(View.VISIBLE);
             }
             else {
-                glasses.setVisibility(View.INVISIBLE);
+                view.setVisibility(View.INVISIBLE);
             }
         }
-        if (checkbox_string.equals("Hat")) {
-
-            if (checkbox.isChecked()) {
-                hat.setVisibility(View.VISIBLE);
-            }
-            else {
-                hat.setVisibility(View.INVISIBLE);
-            }
-        }
-        if (checkbox_string.equals("Eyebrows")) {
-
-            if (checkbox.isChecked()) {
-                eyebrows.setVisibility(View.VISIBLE);
-            }
-            else {
-                eyebrows.setVisibility(View.INVISIBLE);
-            }
-        }
-        if (checkbox_string.equals("Nose")) {
-            if (checkbox.isChecked()) {
-                nose.setVisibility(View.VISIBLE);
-            }
-            else {
-                nose.setVisibility(View.INVISIBLE);
-            }
-        }
-        if (checkbox_string.equals("Mustache")) {
-
-            if (checkbox.isChecked()) {
-                mustache.setVisibility(View.VISIBLE);
-            }
-            else {
-                mustache.setVisibility(View.INVISIBLE);
-            }
-        }
-        if (checkbox_string.equals("Arms")) {
-
-            if (checkbox.isChecked()) {
-                arms.setVisibility(View.VISIBLE);
-            }
-            else {
-                arms.setVisibility(View.INVISIBLE);
-            }
-        }
-        if (checkbox_string.equals("Eyes")) {
-
-            if (checkbox.isChecked()) {
-                eyes.setVisibility(View.VISIBLE);
-            }
-            else {
-                eyes.setVisibility(View.INVISIBLE);
-            }
-        }
-        if (checkbox_string.equals("Mouth")) {
-
-
-            if (checkbox.isChecked()) {
-                mouth.setVisibility(View.VISIBLE);
-            }
-            else {
-                mouth.setVisibility(View.INVISIBLE);
-            }
-        }
-        if (checkbox_string.equals("Ears")) {
-
-            if (checkbox.isChecked()) {
-                ears.setVisibility(View.VISIBLE);
-            }
-            else {
-                ears.setVisibility(View.INVISIBLE);
-            }
-        }
-        if (checkbox_string.equals("Shoes")) {
-
-            if (checkbox.isChecked()) {
-                shoes.setVisibility(View.VISIBLE);
-            }
-            else {
-                shoes.setVisibility(View.INVISIBLE);
-            }
+        catch(Exception e) {
+            e.printStackTrace();
         }
     }
 }
