@@ -9,4 +9,4 @@ can be placed on it by checking the corresponding checkboxes.
 
 
 <img src="https://github.com/AnneHS/Mr.-Potatohead/blob/master/app/doc/portret.PNG" height="15%" width="24%"/> <img 
-src="https://github.com/AnneHS/Mr.-Potatohead/blob/master/app/doc/landscape.PNG" height="15%" width="24%"/> 
+src="https://github.com/AnneHS/Mr.-Potatohead/blob/master/app/doc/landscape.PNG" height="15%" width="80%"/> 
