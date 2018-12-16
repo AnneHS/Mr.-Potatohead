@@ -13,5 +13,9 @@ can be placed on it by checking the corresponding checkboxes.
 <p align="center">
   <img src="https://github.com/AnneHS/Mr.-Potatohead/blob/master/app/doc/portrait1.png" height="5%" width="24%"/> <img
   src="https://github.com/AnneHS/Mr.-Potatohead/blob/master/app/doc/portrait2.png" height="5%" width="24%"/>  
+  
+  
+  
+  
   <img src="https://github.com/AnneHS/Mr.-Potatohead/blob/master/app/doc/landscape.PNG" height="15%" width="50%"/>
 </p>
